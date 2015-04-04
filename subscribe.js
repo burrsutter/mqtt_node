@@ -1,7 +1,7 @@
 var mqtt    = require('mqtt');
-var client  = mqtt.connect('mqtt://192.168.1.9');
+var client  = mqtt.connect('mqtt://192.168.3.3');
 
-client.subscribe('topic');
+client.subscribe('mag_topic');
 
 client.on('message', function (topic, message) {
   // message is Buffer
